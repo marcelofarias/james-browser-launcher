@@ -35,7 +35,7 @@ function renderPage( url ) {
 	};
 
 	page.open( url, function( status ) {
-		console.log( 'status: ', status );
+		console.log( 'status:', status );
 		if ( status !== 'success' ) {
 			phantom.exit( 1 );
 		}
